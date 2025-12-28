@@ -1,3 +1,22 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
 
+nav button {
+  width: 150px;
+  border: red solid 2px;
+  color: red;
+  background-color: transparent;
+  font-weight: 600;
+}
+nav button:hover {
+  color: white;
+  background-color: red;
+}
+nav .profile-arrow {
+  font-size: 1rem;
+  color: #e10000;
+}
 
 /*# sourceMappingURL=sass.css.map */
