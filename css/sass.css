@@ -19,4 +19,15 @@ nav .profile-arrow {
   color: #e10000;
 }
 
+main {
+  background-image: url(../images/mainBackground.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  min-height: 300px;
+}
+main .btn-group {
+  background-color: rgba(231, 224, 224, 0.5);
+}
+
 /*# sourceMappingURL=sass.css.map */

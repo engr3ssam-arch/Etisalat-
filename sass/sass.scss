@@ -23,3 +23,14 @@ nav{
 }
  
 }
+main{
+    background-image: url(../images/mainBackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    min-height: 300px;
+   .btn-group{
+    background-color: rgb(231, 224, 224,0.5);
+    
+   }
+}
