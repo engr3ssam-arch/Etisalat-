@@ -34,3 +34,205 @@ main{
     
    }
 }
+$bg-color: #f8f9fa;
+$card-bg: #ffffff;
+$text-dark: #212529;
+$border-color: #f1f1f1;
+
+.insight-card {
+  background: $card-bg;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  
+  .border-end-dashed {
+    border-right: 2px dashed $border-color;
+    @media (max-width: 991px) { border-right: none; border-bottom: 2px dashed $border-color; padding-bottom: 20px; }
+  }
+}
+
+.stat-item {
+  border: 1px solid $border-color;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+}
+
+// لإضافة تأثير التدرج تحت الرسم البياني
+.chart-placeholder {
+  height: 300px;
+  position: relative;
+  // Chart.js handles the canvas, but we style the container
+}
+
+.performance-card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  max-width: 350px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+
+  .card-header {
+    margin-bottom: 10px;
+    h5 { color: #2D2E3E; }
+    i { cursor: pointer; font-weight: bold; }
+  }
+
+  p {
+    font-size: 14px;
+    color: #888;
+  }
+  .orange-arrow{
+    display: inline-block;
+    width: 12px;           
+    height: 12px;         
+    border-top: 2px solid #ff5e3a;    
+    border-right: 2px solid #ff5e3a; 
+    transform: rotate(45deg);        
+    margin-right: 5px;               
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      transform: rotate(45deg) scale(1.1);
+      border-color: #e54e2b;
+    }
+  }
+}
+
+
+// RESERVATION INSIGHTS
+$orange: #ff5e3a;
+$teal: #4db6ac;
+$info-blue: #64b5f6;
+$dark-blue: #373b53;
+$border-light: #f1f1f1;
+
+.insight-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+
+
+    .orange-arrow {
+        width: 12px; 
+        height: 12px;
+        border-top: 2px solid red; 
+        border-right: 2px solid red;
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+}
+
+.stat-box {
+    border: 1px solid $border-light;
+    border-radius: 15px;
+    
+    .border-end-dashed {
+        border-right: 1.5px dashed #ccc !important;
+    }
+
+    label {
+        font-size: 11px;
+        color: #666;
+        display: block;
+        margin-bottom: 4px;
+    }
+}
+
+.custom-progress {
+    height: 6px !important; 
+    border-radius: 10px;
+    background-color: #f0f0f0;
+
+    .progress-bar {
+        border-radius: 10px;
+    }
+}
+
+
+.bg-teal { background-color: $teal; }
+.bg-dark-blue { background-color: $dark-blue; }
+.bg-orange { background-color: $orange; }
+
+
+//remender
+$primary-orange: #f47b20;
+$danger-red: #e63946;
+$bg-light: #f8f9fa;
+
+body { background-color: $bg-light; font-family: 'Segoe UI', sans-serif; }
+
+.main-card {
+  background: #fff;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+
+
+.border-end-dashed {
+  border-right: 1.5px dashed #ddd !important;
+}
+
+.stat-inner-box {
+  border: 1px solid #eee;
+  border-radius: 16px;
+}
+
+.custom-progress {
+  height: 6px !important;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  .progress-bar { border-radius: 10px; }
+}
+
+
+.plus-button-circle {
+  width: 24px;
+   height: 24px;
+  border: 1.5px solid $danger-red;
+  color: $danger-red;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: bold; cursor: pointer;
+}
+
+
+.bg-teal { background-color: #20c997; }
+.bg-orange { background-color: $primary-orange; }
+
+
+.reminder-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  &.active { background-color: #fff; border-color: #f0f0f0; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+}
+$red-color: #e63946;
+ .recent-activity{
+
+  .red-arrow {
+    display: inline-block;
+    width: 10px; height: 10px;
+    border-top: 2px solid $red-color;
+    border-right: 2px solid $red-color;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+ }

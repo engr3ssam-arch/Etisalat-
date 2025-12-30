@@ -30,4 +30,203 @@ main .btn-group {
   background-color: rgba(231, 224, 224, 0.5);
 }
 
+.insight-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+.insight-card .border-end-dashed {
+  border-right: 2px dashed #f1f1f1;
+}
+@media (max-width: 991px) {
+  .insight-card .border-end-dashed {
+    border-right: none;
+    border-bottom: 2px dashed #f1f1f1;
+    padding-bottom: 20px;
+  }
+}
+
+.stat-item {
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.stat-item:hover {
+  transform: translateY(-3px);
+}
+.stat-item .icon-circle {
+  width: 50px;
+  height: 50px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.chart-placeholder {
+  height: 300px;
+  position: relative;
+}
+
+.performance-card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  max-width: 350px;
+  margin: 20px auto;
+  font-family: "Arial", sans-serif;
+}
+.performance-card .card-header {
+  margin-bottom: 10px;
+}
+.performance-card .card-header h5 {
+  color: #2D2E3E;
+}
+.performance-card .card-header i {
+  cursor: pointer;
+  font-weight: bold;
+}
+.performance-card p {
+  font-size: 14px;
+  color: #888;
+}
+.performance-card .orange-arrow {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #ff5e3a;
+  border-right: 2px solid #ff5e3a;
+  transform: rotate(45deg);
+  margin-right: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.performance-card .orange-arrow:hover {
+  transform: rotate(45deg) scale(1.1);
+  border-color: #e54e2b;
+}
+
+.insight-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+.insight-card .orange-arrow {
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.stat-box {
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+}
+.stat-box .border-end-dashed {
+  border-right: 1.5px dashed #ccc !important;
+}
+.stat-box label {
+  font-size: 11px;
+  color: #666;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.custom-progress {
+  height: 6px !important;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+.custom-progress .progress-bar {
+  border-radius: 10px;
+}
+
+.bg-teal {
+  background-color: #4db6ac;
+}
+
+.bg-dark-blue {
+  background-color: #373b53;
+}
+
+.bg-orange {
+  background-color: #ff5e3a;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.main-card {
+  background: #fff;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.border-end-dashed {
+  border-right: 1.5px dashed #ddd !important;
+}
+
+.stat-inner-box {
+  border: 1px solid #eee;
+  border-radius: 16px;
+}
+
+.custom-progress {
+  height: 6px !important;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+.custom-progress .progress-bar {
+  border-radius: 10px;
+}
+
+.plus-button-circle {
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid #e63946;
+  color: #e63946;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bg-teal {
+  background-color: #20c997;
+}
+
+.bg-orange {
+  background-color: #f47b20;
+}
+
+.reminder-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+.reminder-card.active {
+  background-color: #fff;
+  border-color: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.recent-activity .red-arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #e63946;
+  border-right: 2px solid #e63946;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=sass.css.map */
