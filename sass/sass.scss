@@ -71,11 +71,11 @@ $border-color: #f1f1f1;
   }
 }
 
-// لإضافة تأثير التدرج تحت الرسم البياني
+
 .chart-placeholder {
   height: 300px;
   position: relative;
-  // Chart.js handles the canvas, but we style the container
+ 
 }
 
 .performance-card {
@@ -83,9 +83,11 @@ $border-color: #f1f1f1;
   border-radius: 25px;
   padding: 25px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-  max-width: 350px;
-  margin: 20px auto;
+  width: 250px;
+  height: 500px;
+  margin-left: 20px;
   font-family: 'Arial', sans-serif;
+
 
   .card-header {
     margin-bottom: 10px;
