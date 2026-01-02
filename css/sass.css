@@ -30,20 +30,24 @@ main .btn-group {
   background-color: rgba(231, 224, 224, 0.5);
 }
 
-.insight-card {
+.container .insight-card {
   background: #ffffff;
+  width: 65%;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
-.insight-card .border-end-dashed {
+.container .insight-card .border-end-dashed {
   border-right: 2px dashed #f1f1f1;
 }
 @media (max-width: 991px) {
-  .insight-card .border-end-dashed {
+  .container .insight-card .border-end-dashed {
     border-right: none;
     border-bottom: 2px dashed #f1f1f1;
     padding-bottom: 20px;
   }
+}
+.container .performance-card {
+  width: 30%;
 }
 
 .stat-item {
@@ -71,7 +75,7 @@ main .btn-group {
 }
 
 .performance-card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 25px;
   padding: 25px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
@@ -165,8 +169,9 @@ body {
 }
 
 .main-card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 24px;
+  margin-left: -50px;
   border: none;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
 }
@@ -210,14 +215,20 @@ body {
   background-color: #f47b20;
 }
 
-.reminder-card {
+.remender-container .remender {
+  width: 250px;
+}
+.remender-container .remender .reminder-card {
   border: 1px solid #eee;
   border-radius: 12px;
 }
-.reminder-card.active {
+.remender-container .remender .reminder-card.active {
   background-color: #fff;
   border-color: #f0f0f0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+.remender-container img {
+  width: 300px;
 }
 
 .recent-activity .red-arrow {

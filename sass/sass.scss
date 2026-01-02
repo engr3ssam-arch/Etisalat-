@@ -38,18 +38,30 @@ $bg-color: #f8f9fa;
 $card-bg: #ffffff;
 $text-dark: #212529;
 $border-color: #f1f1f1;
+.container{
 
 .insight-card {
   background: $card-bg;
+  width: 65%;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   
   .border-end-dashed {
     border-right: 2px dashed $border-color;
-    @media (max-width: 991px) { border-right: none; border-bottom: 2px dashed $border-color; padding-bottom: 20px; }
+    @media (max-width: 991px) {
+       border-right: none; 
+       border-bottom: 2px dashed $border-color;
+        padding-bottom: 20px;
+       }
   }
 }
+.performance-card{
+      width: 30%;
 
+}
+
+ 
+}
 .stat-item {
   border: 1px solid $border-color;
   border-radius: 15px;
@@ -79,7 +91,7 @@ $border-color: #f1f1f1;
 }
 
 .performance-card {
-  background: #fff;
+  background: $card-bg;
   border-radius: 25px;
   padding: 25px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.08);
@@ -181,8 +193,9 @@ $bg-light: #f8f9fa;
 body { background-color: $bg-light; font-family: 'Segoe UI', sans-serif; }
 
 .main-card {
-  background: #fff;
+  background: $card-bg;
   border-radius: 24px;
+  margin-left: -50px;
   border: none;
   box-shadow: 0 8px 24px rgba(0,0,0,0.04);
 }
@@ -216,14 +229,26 @@ body { background-color: $bg-light; font-family: 'Segoe UI', sans-serif; }
 }
 
 
-.bg-teal { background-color: #20c997; }
-.bg-orange { background-color: $primary-orange; }
+.bg-teal { 
+  background-color: #20c997; 
+}
+.bg-orange { 
+  background-color: $primary-orange;
+ }
+.remender-container{
 
+.remender{
+width: 250px;
 
 .reminder-card {
   border: 1px solid #eee;
   border-radius: 12px;
   &.active { background-color: #fff; border-color: #f0f0f0; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+}
+}
+img{
+  width: 300px;
+}
 }
 $red-color: #e63946;
  .recent-activity{
