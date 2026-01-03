@@ -51,7 +51,7 @@ main .btn-group {
 }
 @media (max-width: 480px) {
   .container .performance-card {
-    width: 100%;
+    width: 500px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
