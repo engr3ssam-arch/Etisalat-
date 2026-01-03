@@ -64,6 +64,29 @@ main{
       width: 30%;
 
 }
+@media (max-width:480px){
+.insight-card {
+  width:100%;
+
+}
+.performance-card{
+  width: 100%;
+
+}
+}
+ 
+
+@media (min-width:481px) and (max-width:767px){
+
+.insight-card {
+  width:100%;
+margin-left: 15px;
+}
+.performance-card{
+  width: 100%;
+margin-top: 10px;
+}
+}
 
  
 }
@@ -142,10 +165,7 @@ main{
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-    // width: 75%;
-    // margin-left: 50px;
-
-
+    
     .orange-arrow {
         width: 12px; 
         height: 12px;
@@ -186,7 +206,18 @@ main{
   .insight-card{
     width: 75%;
     margin-left: 50px;
+
+    @media (max-width:480px){
+      width: 100%;
+
+}
+ 
+
+@media (min-width:481px) and (max-width:767px){
+width: 100%;
+}
   }
+
 
 
 }
@@ -194,6 +225,15 @@ main{
 .recent-activity{
   width: 72%;
     margin-left: 90px;
+   @media (max-width:480px){
+ width: 50%;
+}
+ 
+
+@media (min-width:481px) and (max-width:767px){
+ width: 100%;
+}
+ 
 }
 .bg-teal { background-color: $teal; }
 .bg-dark-blue { background-color: $dark-blue; }
@@ -283,3 +323,18 @@ $red-color: #e63946;
 }
 
  }
+@media (max-width:480px){
+h4 ,h5{
+  font-size: medium;
+}
+}
+ 
+
+@media (min-width:481px) and (max-width:767px){
+h4 ,h5{
+  font-size: medium;
+}
+p{
+  font-size: small;
+}
+}

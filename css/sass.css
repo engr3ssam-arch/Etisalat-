@@ -49,6 +49,24 @@ main .btn-group {
 .container .performance-card {
   width: 30%;
 }
+@media (max-width: 480px) {
+  .container .insight-card {
+    width: 100%;
+  }
+  .container .performance-card {
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container .insight-card {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .container .performance-card {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
 
 .stat-item {
   border: 1px solid #f1f1f1;
@@ -155,10 +173,30 @@ main .btn-group {
   width: 75%;
   margin-left: 50px;
 }
+@media (max-width: 480px) {
+  .today-reservation-insights .insight-card {
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .today-reservation-insights .insight-card {
+    width: 100%;
+  }
+}
 
 .recent-activity {
   width: 72%;
   margin-left: 90px;
+}
+@media (max-width: 480px) {
+  .recent-activity {
+    width: 50%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .recent-activity {
+    width: 100%;
+  }
 }
 
 .bg-teal {
@@ -250,6 +288,20 @@ body {
   border-right: 2px solid #e63946;
   transform: rotate(45deg);
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  h4, h5 {
+    font-size: medium;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  h4, h5 {
+    font-size: medium;
+  }
+  p {
+    font-size: small;
+  }
 }
 
 /*# sourceMappingURL=sass.css.map */
