@@ -1,4 +1,12 @@
-
+$orange: #ff5e3a;
+$teal: #4db6ac;
+$info-blue: #64b5f6;
+$dark-blue: #373b53;
+$border-light: #f1f1f1;
+$bg-color: #f8f9fa;
+$card-bg: #ffffff;
+$text-dark: #212529;
+$border-color: #f1f1f1;
 body{
     margin: 0;
     box-sizing: border-box;
@@ -34,10 +42,7 @@ main{
     
    }
 }
-$bg-color: #f8f9fa;
-$card-bg: #ffffff;
-$text-dark: #212529;
-$border-color: #f1f1f1;
+
 .container{
 
 .insight-card {
@@ -131,16 +136,14 @@ $border-color: #f1f1f1;
 
 
 // RESERVATION INSIGHTS
-$orange: #ff5e3a;
-$teal: #4db6ac;
-$info-blue: #64b5f6;
-$dark-blue: #373b53;
-$border-light: #f1f1f1;
+
 
 .insight-card {
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    // width: 75%;
+    // margin-left: 50px;
 
 
     .orange-arrow {
@@ -178,8 +181,20 @@ $border-light: #f1f1f1;
         border-radius: 10px;
     }
 }
+.today-reservation-insights{
+
+  .insight-card{
+    width: 75%;
+    margin-left: 50px;
+  }
 
 
+}
+
+.recent-activity{
+  width: 72%;
+    margin-left: 90px;
+}
 .bg-teal { background-color: $teal; }
 .bg-dark-blue { background-color: $dark-blue; }
 .bg-orange { background-color: $orange; }
@@ -190,7 +205,9 @@ $primary-orange: #f47b20;
 $danger-red: #e63946;
 $bg-light: #f8f9fa;
 
-body { background-color: $bg-light; font-family: 'Segoe UI', sans-serif; }
+body { background-color: $bg-light; 
+  font-family: 'Segoe UI', sans-serif; 
+}
 
 .main-card {
   background: $card-bg;
@@ -238,12 +255,15 @@ body { background-color: $bg-light; font-family: 'Segoe UI', sans-serif; }
 .remender-container{
 
 .remender{
-width: 250px;
 
+width: 320px;
+margin-left: -120px;
 .reminder-card {
   border: 1px solid #eee;
   border-radius: 12px;
-  &.active { background-color: #fff; border-color: #f0f0f0; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+  &.active { background-color: $card-bg;
+     border-color: #f0f0f0;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
 }
 }
 img{

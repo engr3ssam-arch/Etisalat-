@@ -151,6 +151,16 @@ main .btn-group {
   border-radius: 10px;
 }
 
+.today-reservation-insights .insight-card {
+  width: 75%;
+  margin-left: 50px;
+}
+
+.recent-activity {
+  width: 72%;
+  margin-left: 90px;
+}
+
 .bg-teal {
   background-color: #4db6ac;
 }
@@ -216,14 +226,15 @@ body {
 }
 
 .remender-container .remender {
-  width: 250px;
+  width: 320px;
+  margin-left: -120px;
 }
 .remender-container .remender .reminder-card {
   border: 1px solid #eee;
   border-radius: 12px;
 }
 .remender-container .remender .reminder-card.active {
-  background-color: #fff;
+  background-color: #ffffff;
   border-color: #f0f0f0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
 }
