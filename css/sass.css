@@ -32,7 +32,7 @@ main .btn-group {
 
 .container .insight-card {
   background: #ffffff;
-  width: 65%;
+  margin-left: 20px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
@@ -47,25 +47,7 @@ main .btn-group {
   }
 }
 .container .performance-card {
-  width: 30%;
-}
-@media (max-width: 480px) {
-  .container .insight-card {
-    width: 100%;
-  }
-  .container .performance-card {
-    width: 100%;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .container .insight-card {
-    width: 100%;
-    margin-left: 15px;
-  }
-  .container .performance-card {
-    width: 100%;
-    margin-top: 10px;
-  }
+  width: 460px;
 }
 
 .stat-item {

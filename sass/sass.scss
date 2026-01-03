@@ -47,7 +47,7 @@ main{
 
 .insight-card {
   background: $card-bg;
-  width: 65%;
+  margin-left: 20px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   
@@ -60,34 +60,10 @@ main{
        }
   }
 }
+
 .performance-card{
-      width: 30%;
-
+  width: 460px;
 }
-@media (max-width:480px){
-.insight-card {
-  width:100%;
-
-}
-.performance-card{
-  width: 100%;
-
-}
-}
- 
-
-@media (min-width:481px) and (max-width:767px){
-
-.insight-card {
-  width:100%;
-margin-left: 15px;
-}
-.performance-card{
-  width: 100%;
-margin-top: 10px;
-}
-}
-
  
 }
 .stat-item {
