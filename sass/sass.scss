@@ -62,7 +62,16 @@ main{
 }
 
 .performance-card{
-  width: 460px;
+  width: 350px;
+   @media (max-width:480px){
+  width:100%
+
+}
+@media (min-width:481px) and (max-width:767px){
+width: 100%;
+}
+
+
 }
  
 }
