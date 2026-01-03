@@ -64,7 +64,8 @@ main{
 .performance-card{
   width: 350px;
    @media (max-width:480px){
-  width:500px
+  width:100%;
+  margin:0 auto;
  
 }
 @media (min-width:481px) and (max-width:767px){
