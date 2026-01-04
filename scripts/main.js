@@ -24,3 +24,5 @@ new ApexCharts(document.querySelector("#performanceRadial"), {
     },
     colors: ['#ff5e3a']
 }).render();
+
+
