@@ -269,13 +269,27 @@
             </div>
             <!--END TODAY RESERVATION INSIGHTS-->
             <!--START RECENTLY ACTIVITIES-->
-            <div class="custom-card p-4">
+            <div class="custom-card p-4  overflow-auto" style="max-height: 400px;">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h6 class="fw-bold m-0">Recently Activities</h6>
                     <i class="fa-solid fa-chevron-right text-danger small"></i>
                 </div>
                 <div class="row g-3">
                     <div class="col-md-6">
+                        <div class="activity-box p-3 border rounded-4">
+                            <h6 class="fw-bold mb-1">01112345678</h6>
+                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB...</p>
+                            <div class="small text-muted"><i class="fa-regular fa-clock me-1"></i> Today | 09:30 AM</div>
+                        </div>
+                    </div>
+                     <div class="col-md-6">
+                        <div class="activity-box p-3 border rounded-4">
+                            <h6 class="fw-bold mb-1">01112345678</h6>
+                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB...</p>
+                            <div class="small text-muted"><i class="fa-regular fa-clock me-1"></i> Today | 09:30 AM</div>
+                        </div>
+                    </div>
+                     <div class="col-md-6">
                         <div class="activity-box p-3 border rounded-4">
                             <h6 class="fw-bold mb-1">01112345678</h6>
                             <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB...</p>
@@ -334,7 +348,8 @@
                 <p class="text-muted small">Almost there, keep up the great work!</p>
             </div>
            <!--END NOV PERFORMANCE-->
-            <div class="custom-card p-4 mb-4">
+           <!--START REMENDER-->
+            <div class="custom-card p-4 mb-4 overflow-auto" style="max-height: 200px;">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h6 class="fw-bold m-0">Reminders</h6>
                     <div class="plus-btn-small">+</div>
@@ -363,8 +378,22 @@
                         <span class="small text-muted ">Contact tech team to report issue.</span>
                     </div>
                     </div>
-            </div>
 
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted ">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted ">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+            </div>
+           <!--END REMENDER-->
             <div class="black-friday-offer overflow-hidden">
                 <img src="./images/black-friday-offer.png" class=" w-100 rounded-4 " alt="Offer">
             </div>
