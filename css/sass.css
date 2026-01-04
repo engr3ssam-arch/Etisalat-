@@ -30,271 +30,60 @@ main .btn-group {
   background-color: rgba(231, 224, 224, 0.5);
 }
 
-.container .insight-card {
-  background: #ffffff;
-  margin-left: 20px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-.container .insight-card .border-end-dashed {
-  border-right: 2px dashed #f1f1f1;
-}
-@media (max-width: 991px) {
-  .container .insight-card .border-end-dashed {
-    border-right: none;
-    border-bottom: 2px dashed #f1f1f1;
-    padding-bottom: 20px;
-  }
-}
-.container .performance-card {
-  width: 350px;
-}
-@media (max-width: 480px) {
-  .container .performance-card {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .container .performance-card {
-    width: 100%;
-  }
-}
-
-.stat-item {
-  border: 1px solid #f1f1f1;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
-}
-.stat-item:hover {
-  transform: translateY(-3px);
-}
-.stat-item .icon-circle {
-  width: 50px;
-  height: 50px;
-  background: #f8f9fa;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-
-.chart-placeholder {
-  height: 300px;
-  position: relative;
-}
-
-.performance-card {
-  background: #ffffff;
-  border-radius: 25px;
-  padding: 25px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  width: 250px;
-  height: 500px;
-  margin-left: 20px;
-  font-family: "Arial", sans-serif;
-}
-.performance-card .card-header {
-  margin-bottom: 10px;
-}
-.performance-card .card-header h5 {
-  color: #2D2E3E;
-}
-.performance-card .card-header i {
-  cursor: pointer;
-  font-weight: bold;
-}
-.performance-card p {
-  font-size: 14px;
-  color: #888;
-}
-.performance-card .orange-arrow {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #ff5e3a;
-  border-right: 2px solid #ff5e3a;
-  transform: rotate(45deg);
-  margin-right: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.performance-card .orange-arrow:hover {
-  transform: rotate(45deg) scale(1.1);
-  border-color: #e54e2b;
-}
-
-.insight-card {
+.custom-card {
   background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-}
-.insight-card .orange-arrow {
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid red;
-  border-right: 2px solid red;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.stat-box {
-  border: 1px solid #f1f1f1;
-  border-radius: 15px;
-}
-.stat-box .border-end-dashed {
-  border-right: 1.5px dashed #ccc !important;
-}
-.stat-box label {
-  font-size: 11px;
-  color: #666;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.custom-progress {
-  height: 6px !important;
-  border-radius: 10px;
-  background-color: #f0f0f0;
-}
-.custom-progress .progress-bar {
-  border-radius: 10px;
-}
-
-.today-reservation-insights .insight-card {
-  width: 75%;
-  margin-left: 50px;
-}
-@media (max-width: 480px) {
-  .today-reservation-insights .insight-card {
-    width: 100%;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .today-reservation-insights .insight-card {
-    width: 100%;
-  }
-}
-
-.recent-activity {
-  width: 72%;
-  margin-left: 90px;
-}
-@media (max-width: 480px) {
-  .recent-activity {
-    width: 50%;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .recent-activity {
-    width: 100%;
-  }
-}
-
-.bg-teal {
-  background-color: #4db6ac;
-}
-
-.bg-dark-blue {
-  background-color: #373b53;
-}
-
-.bg-orange {
-  background-color: #ff5e3a;
-}
-
-body {
-  background-color: #f8f9fa;
-  font-family: "Segoe UI", sans-serif;
-}
-
-.main-card {
-  background: #ffffff;
   border-radius: 24px;
-  margin-left: -50px;
-  border: none;
+  border: 1px solid #f0f0f0;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
 }
 
+.icon-sq {
+  width: 40px;
+  height: 40px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+}
+
 .border-end-dashed {
-  border-right: 1.5px dashed #ddd !important;
+  border-right: 1.5px dashed #eee !important;
+}
+@media (max-width: 768px) {
+  .border-end-dashed {
+    border-right: none !important;
+    border-bottom: 1.5px dashed #eee;
+    padding-bottom: 20px;
+  }
 }
 
-.stat-inner-box {
-  border: 1px solid #eee;
-  border-radius: 16px;
-}
-
-.custom-progress {
-  height: 6px !important;
-  border-radius: 10px;
-  background-color: #f0f0f0;
-}
-.custom-progress .progress-bar {
-  border-radius: 10px;
-}
-
-.plus-button-circle {
-  width: 24px;
-  height: 24px;
+.plus-btn-small {
+  width: 22px;
+  height: 22px;
   border: 1.5px solid #e63946;
   color: #e63946;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-size: 14px;
   cursor: pointer;
 }
 
-.bg-teal {
-  background-color: #20c997;
+.reminder-item.active {
+  background-color: #f8f9fa;
 }
 
-.bg-orange {
-  background-color: #f47b20;
+.custom-progress {
+  height: 6px !important;
+  border-radius: 10px;
+  background-color: #f0f0f0;
 }
 
-.remender-container .remender {
-  width: 320px;
-  margin-left: -120px;
-}
-.remender-container .remender .reminder-card {
-  border: 1px solid #eee;
-  border-radius: 12px;
-}
-.remender-container .remender .reminder-card.active {
-  background-color: #ffffff;
-  border-color: #f0f0f0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
-}
-.remender-container img {
-  width: 300px;
-}
-
-.recent-activity .red-arrow {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #e63946;
-  border-right: 2px solid #e63946;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
-
-@media (max-width: 480px) {
-  h4, h5 {
-    font-size: medium;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  h4, h5 {
-    font-size: medium;
-  }
-  p {
-    font-size: small;
-  }
+img {
+  height: 340px;
 }
 
 /*# sourceMappingURL=sass.css.map */

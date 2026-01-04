@@ -120,43 +120,30 @@
 
     </main>
     <!--END MAIN-->
-    
     <!--START PURCHASED ORDER-->
-    <div class="purchased-order">
-      <div class="container mt-5   ">
-        <div class="row  gap-5">
-  <div class="insight-card p-4  col-lg-8 col-xl-8  col-md-12 cl-sm-12 ">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <h5 class="fw-bold">Purchased Orders Insights</h5>
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle" type="button">Last Year</button>
-      </div>
-    </div>
-
+  <div class="container my-5">
     <div class="row g-4">
-      <div class="col-lg-8 border-end-dashed">
-        <div class="chart-placeholder">
-        <div id="chart"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="d-flex flex-column gap-3">
-          <div class="stat-item d-flex align-items-center justify-content-between p-3">
-            <div class="d-flex align-items-center gap-3 ">
-              <div class="icon-circle"><i class="fa-solid fa-inbox"></i></div>
-              <div>
-                <p class="text-muted mb-0 fs-6">GSM</p>
-                <h4 class="fw-bold mb-0">+ 80000</h4>
-              </div>
-            </div>
-            <div class="text-end text-success">
-              <span class="small fw-bold">↑ 5.22%</span>
-              <div class="mini-sparkline"></div>
-            </div>
-          </div>
-
-          <div class="stat-item d-flex align-items-center justify-content-between p-3">
+        <div class="col-lg-8">
+          <!--START PURCHASED ORDER INSIGHTS-->
+            <div class="custom-card p-4 mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h6 class="fw-bold m-0">Purchased Orders Insights</h6>
+                    <button class="btn btn-light btn-sm border dropdown-toggle text-muted">Last Year</button>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-7 border-end-dashed">
+                        <div id="mainOrderChart"></div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="d-flex flex-column gap-2 ps-md-3">
+                            <div class="stat-row d-flex align-items-center justify-content-between p-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="icon-sq"><i class="fa-solid fa-mobile-screen"></i></div>
+                                    <div><h4 class="text-muted d-block">GSM</h4><span class="fw-bold">+ 80000</span></div>
+                                </div>
+                                <div class="text-success small fw-bold">↑ 5.22%</div>
+                            </div>
+                             <div class="stat-item d-flex align-items-center justify-content-between p-3">
             <div class="d-flex align-items-center gap-3">
               <div class="icon-circle"><i class="fa-solid fa-wifi"></i></div>
               <div>
@@ -183,84 +170,26 @@
               <div class="mini-sparkline"></div>
             </div>
           </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="performance-card col-lg-3 ol-xl-3 col-md-12   ">
-    <div class="card-header d-flex justify-content-between">
-        <h5 class="fw-bold">Nov's Performance<span class="orange-arrow"></span></h5>
-        <i class="bi bi-chevron-right text-danger"></i>
-    </div>
-    
-    <div id="radialChart"></div>
-    
-    <p class="text-muted text-center mt-2">Almost there, keep up the great work!</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!--END PURCHASED ORDER-->
-    
-<div class="conatiner d-flex ">
-<div class="reservation-activity  flex-column ms-5">    
-<div class="today-reservation-insights pt-5  ">
 
-
-    <div class="insight-card p-4  ">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h5 class="fw-bold m-0">Today’s Reservation Insights</h5>
-            <span class="orange-arrow"></span>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="stat-box d-flex align-items-center p-3">
-                    <div class="main-val border-end-dashed pe-4 me-4 text-center">
-                        <h3 class="fw-bold mb-0">5100</h3>
-                        <small class="text-muted">GSM</small>
-                    </div>
-                    <div class="progress-grids flex-grow-1">
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <label>3500 Available</label>
-                                <div class="progress custom-progress">
-                              <div class="progress-bar bg-info" style="width: 70%">
-                              </div>
-                                </div>
                             </div>
-                            <div class="col-6">
-                                <label>2100 Extended</label>
-                                <div class="progress custom-progress">
-                                  <div class="progress-bar bg-teal" style="width: 50%">
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <label>1300 Purchased</label>
-                                <div class="progress custom-progress">
-                                  <div class="progress-bar bg-dark-blue" style="width: 40%">
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <label>300 Expired</label>
-                                <div class="progress custom-progress">
-                                  <div class="progress-bar bg-orange" style="width: 20%">
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="stat-box d-flex align-items-center p-3">
-                    <div class="main-val border-end-dashed pe-4 me-4 text-center">
-                        <h3 class="fw-bold mb-0">2400</h3>
-                        <small class="text-muted">LandLine</small>
-                    </div>
-                    <div class="progress-grids flex-grow-1">
+           <!--END PURCHASED ORDER INSIGHTS-->
+           
+            <div class="custom-card p-4 mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h6 class="fw-bold m-0">Today's Reservation Insights</h6>
+                    <i class="fa-solid fa-chevron-right text-danger small"></i>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 border-end-dashed">
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="text-center"><h3 class="fw-bold mb-0">5100</h3><small class="text-muted">GSM</small></div>
+                           
+                            <div class="progress-grids flex-grow-1">
+                      
                         <div class="row g-2">
                             <div class="col-6">
                                 <label>3500 Available</label>
@@ -272,7 +201,7 @@
                             <div class="col-6">
                                 <label>2100 Extended</label>
                                 <div class="progress custom-progress">
-                                  <div class="progress-bar bg-teal" style="width: 100%">
+                                  <div class="progress-bar bg-danger" style="width: 100%">
                                   </div>
                                 </div>
                             </div>
@@ -286,120 +215,157 @@
                             <div class="col-6">
                                 <label>300 Expired</label>
                                 <div class="progress custom-progress">
-                                  <div class="progress-bar bg-orange" style="width: 80%">
+                                  <div class="progress-bar bg-warning" style="width: 80%">
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="stat-box d-flex align-items-center p-3">
+                    <div class="main-val  pe-4 me-4 text-center">
+                        <h3 class="fw-bold mb-0">2400</h3>
+                        <small class="text-muted">LandLine</small>
+                    </div>
+                    <div class="progress-grids flex-grow-1">
+
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <label>3500 Available</label>
+                                <div class="progress custom-progress">
+                              <div class="progress-bar bg-info" style="width: 100%">
+                              </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label>2100 Extended</label>
+                                <div class="progress custom-progress">
+                                  <div class="progress-bar bg-danger" style="width: 100%">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label>1300 Purchased</label>
+                                <div class="progress custom-progress">
+                                  <div class="progress-bar bg-dark-blue" style="width: 40%">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label>300 Expired</label>
+                                <div class="progress custom-progress">
+                                  <div class="progress-bar bg-warning" style="width: 80%">
                                   </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                        </div>
                 </div>
-        </div>
-    
-</div>
+            </div>
 
-
-<div class= " recent-activity  mt-4">
-            <div class="main-card p-4">
+            
+            <div class="custom-card p-4">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h6 class="fw-bold m-0">Recently Activities</h6>
-                    <span class="red-arrow"></span>
+                    <i class="fa-solid fa-chevron-right text-danger small"></i>
                 </div>
                 <div class="row g-3">
                     <div class="col-md-6">
-                        <div class="activity-item p-3 border rounded">
+                        <div class="activity-box p-3 border rounded-4">
                             <h6 class="fw-bold mb-1">01112345678</h6>
-                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB and get Black Friday new offer.</p>
-                            <div class="d-flex align-items-center text-muted" style="font-size: 11px;">
-                                <i class="bi bi-clock me-1"></i> Today | 09:30 AM
-                            </div>
+                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB...</p>
+                            <div class="small text-muted"><i class="fa-regular fa-clock me-1"></i> Today | 09:30 AM</div>
                         </div>
                     </div>
-                      <div class="col-md-6" >
-                        <div class="activity-item p-3 border rounded">
+                     <div class="col-md-6">
+                        <div class="activity-box p-3 border rounded-4">
                             <h6 class="fw-bold mb-1">01112345678</h6>
-                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB and get Black Friday new offer.</p>
-                            <div class="d-flex align-items-center text-muted" style="font-size: 11px;">
-                                <i class="bi bi-clock me-1"></i> Today | 09:30 AM
-                            </div>
+                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB...</p>
+                            <div class="small text-muted"><i class="fa-regular fa-clock me-1"></i> Today | 09:30 AM</div>
                         </div>
                     </div>
-                      <div class="col-md-6" >
-                        <div class="activity-item p-3 border rounded">
+                     <div class="col-md-6">
+                        <div class="activity-box p-3 border rounded-4">
                             <h6 class="fw-bold mb-1">01112345678</h6>
-                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB and get Black Friday new offer.</p>
-                            <div class="d-flex align-items-center text-muted" style="font-size: 11px;">
-                                <i class="bi bi-clock me-1"></i> Today | 09:30 AM
-                            </div>
+                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB...</p>
+                            <div class="small text-muted"><i class="fa-regular fa-clock me-1"></i> Today | 09:30 AM</div>
                         </div>
                     </div>
-                      <div class="col-md-6" >
-                        <div class="activity-item p-3 border rounded">
+                     <div class="col-md-6">
+                        <div class="activity-box p-3 border rounded-4">
                             <h6 class="fw-bold mb-1">01112345678</h6>
-                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB and get Black Friday new offer.</p>
-                            <div class="d-flex align-items-center text-muted" style="font-size: 11px;">
-                                <i class="bi bi-clock me-1"></i> Today | 09:30 AM
-                            </div>
+                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB...</p>
+                            <div class="small text-muted"><i class="fa-regular fa-clock me-1"></i> Today | 09:30 AM</div>
                         </div>
                     </div>
-                      <div class="col-md-6">
-                        <div class="activity-item p-3 border rounded">
+                     <div class="col-md-6">
+                        <div class="activity-box p-3 border rounded-4">
                             <h6 class="fw-bold mb-1">01112345678</h6>
-                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB and get Black Friday new offer.</p>
-                            <div class="d-flex align-items-center text-muted" style="font-size: 11px;">
-                                <i class="bi bi-clock me-1"></i> Today | 09:30 AM
-                            </div>
+                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB...</p>
+                            <div class="small text-muted"><i class="fa-regular fa-clock me-1"></i> Today | 09:30 AM</div>
                         </div>
                     </div>
-                      <div class="col-md-6" >
-                        <div class="activity-item p-3 border rounded">
+                     <div class="col-md-6">
+                        <div class="activity-box p-3 border rounded-4">
                             <h6 class="fw-bold mb-1">01112345678</h6>
-                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB and get Black Friday new offer.</p>
+                            <p class="small text-muted mb-2">Subscription into mega Internet Bundle 150 MB...</p>
+                            <div class="small text-muted"><i class="fa-regular fa-clock me-1"></i> Today | 09:30 AM</div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
 
-                            <div class="d-flex align-items-center text-muted" style="font-size: 11px;">
-                                <i class="bi bi-clock me-1"></i> Today | 09:30 AM
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="col-lg-4">
+            <div class="custom-card p-4 mb-4 text-center">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h6 class="fw-bold m-0">Nov's Performance</h6>
+                    <i class="fa-solid fa-chevron-right text-danger small"></i>
                 </div>
+                <div id="performanceRadial"></div>
+                <p class="text-muted small">Almost there, keep up the great work!</p>
             </div>
-</div>
-</div>
-<div class="remender-container flex-column">
-<div class="remender pt-5">
- <div class="main-card p-4">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-          <h6 class="fw-bold m-0">Reminders</h6>
-          <div class="plus-button-circle">+</div>
+
+            <div class="custom-card p-4 mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="fw-bold m-0">Reminders</h6>
+                    <div class="plus-btn-small">+</div>
+                </div>
+                <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted text-decoration-line-through">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted ">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted ">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="black-friday-offer overflow-hidden">
+                <img src="./images/black-friday-offer.png" class=" w-100 rounded-4 " alt="Offer">
+            </div>
         </div>
-        <div class="reminder-items-wrapper">
-          <div class="reminder-card active p-3 mb-3">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" checked>
-              <label class="form-check-label small text-decoration-line-through">Contact tech team to report issue.</label>
-            </div>
-          </div>
-          <div class="reminder-card p-3 mb-3">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox">
-              <label class="form-check-label small">Print the ID of the customer #9089</label>
-            </div>
-          </div>
-          <div class="reminder-card p-3 mb-3">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox">
-              <label class="form-check-label small">Lorem ipsum is simply dummy text of the printing</label>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-     <div class="black-friday-offer ">
- <img src="./images/black-friday-offer.png" alt="" class="rounded-5 mt-5">
-     </div>
-  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
