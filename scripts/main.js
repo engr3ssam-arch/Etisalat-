@@ -15,14 +15,15 @@ new ApexCharts(document.querySelector("#performanceRadial"), {
     chart: { height: 280, type: 'radialBar' },
     plotOptions: {
         radialBar: {
-            hollow: { size: '50%' },
+            hollow: { size: '45%' },
             track: { background: '#f2f2f2' },
             dataLabels: {
                 value: { fontSize: '32px', fontWeight: 'bold', offsetY: 10, formatter: (v) => v + '%' }
             }
         }
     },
-    colors: ['#ff5e3a']
+    colors: ['#ff5e3a'],
+    stroke: { lineCap: 'round' } 
 }).render();
 
 
