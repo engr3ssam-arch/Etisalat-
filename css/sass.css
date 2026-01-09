@@ -92,6 +92,27 @@ main .placeholder-white::placeholder {
   border-radius: 10px;
   background-color: #f0f0f0;
 }
+.custom-progress .progress-blue-bg {
+  background: transparent linear-gradient(90deg, #4F91B1 0%, #71BDE2 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
+.custom-progress .progress-green-bg {
+  background: transparent linear-gradient(90deg, #40BEBE 0%, #48D1D1 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
+.custom-progress .progress-darkblue-bg {
+  background: transparent linear-gradient(90deg, #323142 0%, #57566C 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
+.custom-progress .progress-orange-bg {
+  background: transparent linear-gradient(90deg, var(--unnamed-color-f46a37) 0%, #FC965A 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #F46A37 0%, #FC965A 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
 
 .black-friday-offer img {
   height: 340px;
