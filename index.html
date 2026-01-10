@@ -149,8 +149,8 @@
     <!--START PURCHASED ORDER-->
   <div class="container my-5">
     <div class="row g-4">
-      <!--START LEFT SIDE-->
-        <div class="col-lg-8">
+      
+        <div class="col-lg-8 col-12">
           <!--START PURCHASED ORDER INSIGHTS-->
             <div class="custom-card p-4 mb-4">
                 <div class="d-flex justify-content-between align-items-center mb-4">
@@ -203,8 +203,22 @@
                     </div>
                 </div>
             </div>
+        </div>
            <!--END PURCHASED ORDER INSIGHTS-->
+           
+          <div class="col-lg-4 col-12">
+            <div class="custom-card p-4 mb-4 text-center">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h6 class="fw-bold m-0">Nov's Performance</h6>
+                    <i class="fa-solid fa-chevron-right text-danger small"></i>
+                </div>
+                <div id="performanceRadial"></div>
+                <p class="text-muted small">Almost there, keep up the great work!</p>
+            </div>
+          </div>
+           <!--END NOV PERFORMANCE-->
            <!--START TODAY RESERVATION INSIGHTS-->
+           <div class="col-lg-8 col-12">
             <div class="custom-card p-4 mb-4">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h6 class="fw-bold m-0">Today's Reservation Insights</h6>
@@ -294,8 +308,61 @@
                         </div>
                 </div>
             </div>
+            </div>
             <!--END TODAY RESERVATION INSIGHTS-->
+
+           <!--START REMENDER-->
+           <div class="col-lg-4 col-12">
+            <div class="custom-card p-4 mb-4 overflow-auto" style="max-height: 200px;">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="fw-bold m-0">Reminders</h6>
+                    <div class="plus-btn-small">+</div>
+                </div>
+                <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted text-decoration-line-through">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted ">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted ">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted ">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+
+                     <div class="reminder-list d-flex flex-column gap-2">
+                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <span class="small text-muted ">Contact tech team to report issue.</span>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+           <!--END REMENDER-->
+
             <!--START RECENTLY ACTIVITIES-->
+            <div class="col-lg-8 col-12">
             <div class="custom-card p-4  overflow-auto" style="max-height: 400px;">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h6 class="fw-bold m-0">Recently Activities</h6>
@@ -360,76 +427,20 @@
                     </div>
                     </div>
             </div>
+            </div>
              <!--END RECENTLY ACTIVITIES-->
-        </div>
-        <!--END LEFT SIDE-->
-        <!--START RIGHT SIDE-->
-        <div class="col-lg-4">
-          <!--START NOV PERFORMANCE-->
-            <div class="custom-card p-4 mb-4 text-center">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h6 class="fw-bold m-0">Nov's Performance</h6>
-                    <i class="fa-solid fa-chevron-right text-danger small"></i>
-                </div>
-                <div id="performanceRadial"></div>
-                <p class="text-muted small">Almost there, keep up the great work!</p>
-            </div>
-           <!--END NOV PERFORMANCE-->
-           <!--START REMENDER-->
-            <div class="custom-card p-4 mb-4 overflow-auto" style="max-height: 200px;">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h6 class="fw-bold m-0">Reminders</h6>
-                    <div class="plus-btn-small">+</div>
-                </div>
-                <div class="reminder-list d-flex flex-column gap-2">
-                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
-                        <input class="form-check-input me-2" type="checkbox" checked>
-                        <span class="small text-muted text-decoration-line-through">Contact tech team to report issue.</span>
-                    </div>
-                    </div>
-                     <div class="reminder-list d-flex flex-column gap-2">
-                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
-                        <input class="form-check-input me-2" type="checkbox" checked>
-                        <span class="small text-muted">Contact tech team to report issue.</span>
-                    </div>
-                    </div>
-                     <div class="reminder-list d-flex flex-column gap-2">
-                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
-                        <input class="form-check-input me-2" type="checkbox" checked>
-                        <span class="small text-muted ">Contact tech team to report issue.</span>
-                    </div>
-                    </div>
-                     <div class="reminder-list d-flex flex-column gap-2">
-                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
-                        <input class="form-check-input me-2" type="checkbox" checked>
-                        <span class="small text-muted ">Contact tech team to report issue.</span>
-                    </div>
-                    </div>
-
-                     <div class="reminder-list d-flex flex-column gap-2">
-                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
-                        <input class="form-check-input me-2" type="checkbox" checked>
-                        <span class="small text-muted ">Contact tech team to report issue.</span>
-                    </div>
-                    </div>
-
-                     <div class="reminder-list d-flex flex-column gap-2">
-                    <div class="reminder-item active d-flex align-items-center p-2 rounded-3">
-                        <input class="form-check-input me-2" type="checkbox" checked>
-                        <span class="small text-muted ">Contact tech team to report issue.</span>
-                    </div>
-                    </div>
-            </div>
-           <!--END REMENDER-->
-           <!--START OFFER-->
+              <!--START OFFER-->
+              <div class="col-lg-4 col-12">
             <div class="black-friday-offer overflow-hidden">
                 <img src="./images/black-friday-offer.png" class=" w-100 rounded-4 " alt="Offer">
             </div>
+            </div>
             <!--END OFFER-->
-        </div>
-         <!--END RIGHT SIDE-->
+
     </div>
-</div>
+  </div>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
